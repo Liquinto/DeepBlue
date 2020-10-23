@@ -6,6 +6,12 @@ namespace Chess_Bot
 {
     class Board
     {
+        public Board()
+        {
+            Make_Board();
+            Fill_Board();
+        }
+
         static void Make_Board()
         {
             Tile[,] Board = new Tile[8, 8];
@@ -25,6 +31,11 @@ namespace Chess_Bot
                     }
                 }
             }
+        }
+
+        static void Fill_Board()
+        {
+
         }
     }
 }

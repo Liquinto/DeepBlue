@@ -11,8 +11,12 @@ namespace Chess_Bot
         int Y;
         bool Is_in_start_state;
 
-        public Piece()
+        public Piece(int colour, int x, int y, bool is_in_start_state)
         {
+            colour = Colour;
+            x = X;
+            y = Y;
+            is_in_start_state = Is_in_start_state;
         }
 
         public abstract void Move();
